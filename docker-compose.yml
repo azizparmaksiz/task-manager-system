@@ -1,0 +1,26 @@
+version: '3'
+ 
+services:    
+  springapi:
+    build: 
+        context: ./task-manager
+    ports:
+      - 9090:9090
+    networks:
+      - backendNetwork
+      - frontendNetwork
+       
+  angular:
+    build: 
+        context: ./task-manager-ui
+    ports: 
+      - 4200:80
+    depends_on:
+      - springapi
+    networks:
+      - frontendNetwork
+
+   
+networks:
+  backendNetwork:
+  frontendNetwork:
