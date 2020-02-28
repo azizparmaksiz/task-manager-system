@@ -23,3 +23,14 @@ Run `docker-compose up` to build and run docker images of  backend and frontend 
 
 Navigate to `http://localhost:4200/` now you can see the angular project running. 
 
+## Frontend Images
+
+### Task List
+![Task list](https://github.com/azizparmaksiz/task-manager-system/blob/master/images/tasklist.png)
+### New Task Notification
+![New Task Notification](https://github.com/azizparmaksiz/task-manager-system/blob/master/images/new-task-notification.png)
+### Postpone Task
+![Postpone Task](https://github.com/azizparmaksiz/task-manager-system/blob/master/images/postpone-task.png)
+### Update Task
+![Update Task](https://github.com/azizparmaksiz/task-manager-system/blob/master/images/update-task.png)
+
