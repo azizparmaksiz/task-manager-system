@@ -25,7 +25,8 @@ or
 Run `java -jar <relative-path-to-here>/task-manager.jar`
 You may replace <relative-path-to-here> with your path to jar folder.
 
-After running application, you can access rest api of this system from https://localhost:9090/swagger-ui.html
+## Api Documentation
+After running application, you can access rest api of this system from http://localhost:9090/swagger-ui.html#/
 
 # Build Docker image
 ## Requirements
