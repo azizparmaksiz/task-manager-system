@@ -49,4 +49,4 @@ Run `docker run -p 9090:9090 azizparmaksiz/docker-task-manager`
 From terminal run  `docker run -p 4200:80 azizparmaksiz/docker-task-manager-ui` and from `http://localhost:4200/` you see the
 angular web application.
 
-For more information please go to  [Task-manager-ui](https://github.com/azizparmaksiz/task-manager-ui).
+For more information please go to  [Task-manager-ui](https://github.com/azizparmaksiz/task-manager-system/tree/master/task-manager-ui).

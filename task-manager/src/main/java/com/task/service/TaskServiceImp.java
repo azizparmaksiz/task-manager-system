@@ -34,7 +34,7 @@ public class TaskServiceImp implements TaskService {
         //    Sort.Order.desc("dueDate"));
         //List<Task> taskList=taskRepository.findAll(sort);
 
-        List<Task> taskList = taskRepository.getCustomShortedTask();
+        List<Task> taskList = taskRepository.getCustomSortedTask();
 
         Type listType = new TypeToken<List<TaskDto>>() {
         }.getType();

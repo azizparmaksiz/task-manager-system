@@ -19,6 +19,6 @@ public  interface TaskRepository extends JpaRepository<Task, Integer> {
             " when 'COMPLETED' then 3" +
             " else t.status end asc," +
             " t.priority asc , t.dueDate desc")
-  List<Task> getCustomShortedTask();
+  List<Task> getCustomSortedTask();
 
 }

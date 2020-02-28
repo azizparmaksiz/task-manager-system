@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
-This project work with sprig [Task Manager](https://github.com/azizparmaksiz/task-manager).
+This project work with sprig [Task Manager](https://github.com/azizparmaksiz/task-manager-system/tree/master/task-manager).
 
 ## Development server
 
