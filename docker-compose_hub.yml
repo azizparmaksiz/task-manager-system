@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  springapi:
+    image: azizparmaksiz/docker-task-manager
+    ports:
+      - 9090:9090
+    networks:
+      - backendNetwork
+      - frontendNetwork
+
+  angular:
+    image: azizparmaksiz/docker-task-manager-ui
+    ports:
+      - 4200:80
+    depends_on:
+      - springapi
+    networks:
+      - frontendNetwork
+
+
+networks:
+  backendNetwork:
+  frontendNetwork:
