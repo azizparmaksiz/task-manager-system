@@ -17,4 +17,6 @@ public interface TaskService {
     public void postponeTask(int taskId, Date toDate);
 
     public int createTask(TaskDto taskDto);
+
+    List<TaskDto> filterTask(String query);
 }

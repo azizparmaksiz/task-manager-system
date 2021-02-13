@@ -23,6 +23,12 @@ public class TaskController {
         return new ResponseEntity<List<TaskDto>>(taskService.getAllTasks(), HttpStatus.OK);
     }
 
+    @GetMapping(value = "/filter/{query}")
+    @ResponseBody
+    public ResponseEntity<List<TaskDto>> getAllActType(@PathVariable("query") String query) {
+        return new ResponseEntity<List<TaskDto>>(taskService.filterTask(query), HttpStatus.OK);
+    }
+
     @PostMapping(value = "/update")
     @ResponseBody
     public ResponseEntity<Void> updateTask(@RequestBody  TaskDto taskDto) {

@@ -71,6 +71,17 @@ public class TaskServiceImp implements TaskService {
     }
 
     @Override
+    public List<TaskDto> filterTask(String query) {
+        List<Task> taskList = taskRepository.findByTitleContains(query);
+
+
+        Type listType = new TypeToken<List<TaskDto>>() {
+        }.getType();
+
+        return modelMapper.map(taskList, listType);
+    }
+
+    @Override
     public void postponeTask(int taskId, Date toDate) {
 
         Optional task = taskRepository.findById(taskId);

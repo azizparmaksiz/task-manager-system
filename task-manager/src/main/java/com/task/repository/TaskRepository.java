@@ -21,4 +21,6 @@ public  interface TaskRepository extends JpaRepository<Task, Integer> {
             " t.priority asc , t.dueDate desc")
   List<Task> getCustomSortedTask();
 
+    List<Task>findByTitleContains(String query);
+
 }
